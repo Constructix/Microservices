@@ -1,0 +1,12 @@
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\bin\Debug\net5.0\FoodToGo.Domain.deps.json
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\bin\Debug\net5.0\FoodToGo.Domain.dll
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\bin\Debug\net5.0\ref\FoodToGo.Domain.dll
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\bin\Debug\net5.0\FoodToGo.Domain.pdb
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\FoodToGo.Domain.csprojAssemblyReference.cache
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\FoodToGo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\FoodToGo.Domain.AssemblyInfoInputs.cache
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\FoodToGo.Domain.AssemblyInfo.cs
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\FoodToGo.Domain.csproj.CoreCompileInputs.cache
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\FoodToGo.Domain.dll
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\ref\FoodToGo.Domain.dll
+D:\Dev\GitHub\FoodToGo\src\Domain\FoodToGo.Domain\obj\Debug\net5.0\FoodToGo.Domain.pdb

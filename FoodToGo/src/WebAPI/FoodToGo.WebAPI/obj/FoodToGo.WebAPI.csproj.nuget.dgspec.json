@@ -1,0 +1,277 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\WebAPI\\FoodToGo.WebAPI\\FoodToGo.WebAPI.csproj": {}
+  },
+  "projects": {
+    "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj",
+        "projectName": "FoodToGo.Domain",
+        "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj",
+        "packagesPath": "C:\\Users\\rjjon\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rjjon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Repository\\FoodToGo.Repositories\\FoodToGo.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Repository\\FoodToGo.Repositories\\FoodToGo.Repositories.csproj",
+        "projectName": "FoodToGo.Repositories",
+        "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Repository\\FoodToGo.Repositories\\FoodToGo.Repositories.csproj",
+        "packagesPath": "C:\\Users\\rjjon\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Repository\\FoodToGo.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rjjon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj": {
+                "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Services\\FoodToGo.Services\\FoodToGo.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Services\\FoodToGo.Services\\FoodToGo.Services.csproj",
+        "projectName": "FoodToGo.Services",
+        "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Services\\FoodToGo.Services\\FoodToGo.Services.csproj",
+        "packagesPath": "C:\\Users\\rjjon\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Services\\FoodToGo.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rjjon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj": {
+                "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj"
+              },
+              "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Repository\\FoodToGo.Repositories\\FoodToGo.Repositories.csproj": {
+                "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Repository\\FoodToGo.Repositories\\FoodToGo.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\WebAPI\\FoodToGo.WebAPI\\FoodToGo.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\WebAPI\\FoodToGo.WebAPI\\FoodToGo.WebAPI.csproj",
+        "projectName": "FoodToGo.WebAPI",
+        "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\WebAPI\\FoodToGo.WebAPI\\FoodToGo.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\rjjon\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\WebAPI\\FoodToGo.WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\rjjon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj": {
+                "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Domain\\FoodToGo.Domain\\FoodToGo.Domain.csproj"
+              },
+              "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Services\\FoodToGo.Services\\FoodToGo.Services.csproj": {
+                "projectPath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Services\\FoodToGo.Services\\FoodToGo.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "noWarn": [
+                "NU1605"
+              ]
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

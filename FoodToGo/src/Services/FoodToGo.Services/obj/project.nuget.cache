@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8kP0VHfDuXc9/qNdUeIFC3qxRVfZO+tnm/trcSVqCnGKS0ky+Jbtmk6IqBlvxhEvkRK/w2pemHai1eWJ/fWYtw==",
+  "success": true,
+  "projectFilePath": "D:\\Dev\\GitHub\\MicroServices\\FoodToGo\\src\\Services\\FoodToGo.Services\\FoodToGo.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rjjon\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
