@@ -16,14 +16,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodToGo.Services", "Services\FoodToGo.Services\FoodToGo.Services.csproj", "{938A9817-B442-4EB7-ADAE-06D783CAE7BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebAPI", "WebAPI", "{1BB59FF7-3742-4E2F-A83E-7779D27D3FC0}"
-	ProjectSection(SolutionItems) = preProject
-		Domain\FoodToGo.Domain\OrderGetRequest.cs = Domain\FoodToGo.Domain\OrderGetRequest.cs
-		Domain\FoodToGo.Domain\OrderGetResponse.cs = Domain\FoodToGo.Domain\OrderGetResponse.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{F4493D1A-CD26-442A-AF5C-4CDF3B21E282}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodToGo.Repositories", "Repository\FoodToGo.Repositories\FoodToGo.Repositories.csproj", "{62EA47D2-8F0C-4E15-84A3-F94E66E914AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodToGo.Repositories", "Repository\FoodToGo.Repositories\FoodToGo.Repositories.csproj", "{62EA47D2-8F0C-4E15-84A3-F94E66E914AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodToGo.Domain.WebAPI", "Domain\FoodToGo.Domain.WebAPI\FoodToGo.Domain.WebAPI.csproj", "{FD2658D3-83D8-4CCB-B069-168B5B19CA20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +81,18 @@ Global
 		{62EA47D2-8F0C-4E15-84A3-F94E66E914AB}.Release|x64.Build.0 = Release|Any CPU
 		{62EA47D2-8F0C-4E15-84A3-F94E66E914AB}.Release|x86.ActiveCfg = Release|Any CPU
 		{62EA47D2-8F0C-4E15-84A3-F94E66E914AB}.Release|x86.Build.0 = Release|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Debug|x64.Build.0 = Debug|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Debug|x86.Build.0 = Debug|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Release|x64.ActiveCfg = Release|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Release|x64.Build.0 = Release|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +103,7 @@ Global
 		{938A9817-B442-4EB7-ADAE-06D783CAE7BB} = {58748D27-B582-4E9A-95AC-B3F621342496}
 		{1BB59FF7-3742-4E2F-A83E-7779D27D3FC0} = {D9ED2996-56EB-4D8F-B92C-2F440E6DAEF8}
 		{62EA47D2-8F0C-4E15-84A3-F94E66E914AB} = {F4493D1A-CD26-442A-AF5C-4CDF3B21E282}
+		{FD2658D3-83D8-4CCB-B069-168B5B19CA20} = {D9ED2996-56EB-4D8F-B92C-2F440E6DAEF8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F298B443-8052-4509-B810-2191A5C06F18}

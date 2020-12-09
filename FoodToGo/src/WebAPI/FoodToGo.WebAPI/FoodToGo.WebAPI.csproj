@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Domain\FoodToGo.Domain.WebAPI\FoodToGo.Domain.WebAPI.csproj" />
     <ProjectReference Include="..\..\Domain\FoodToGo.Domain\FoodToGo.Domain.csproj" />
     <ProjectReference Include="..\..\Services\FoodToGo.Services\FoodToGo.Services.csproj" />
   </ItemGroup>

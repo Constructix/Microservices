@@ -1,5 +1,6 @@
 ﻿using System;
 using FoodToGo.Domain;
+using FoodToGo.Domain.WebAPI;
 using FoodToGo.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -52,11 +53,5 @@ namespace FoodToGo.WebAPI.Controllers
             });
         }
         
-    }
-
-    public class OrderAddedResponse
-    {
-        public DateTime Created { get; set; }
-        public string Message { get; set; }
     }
 }
