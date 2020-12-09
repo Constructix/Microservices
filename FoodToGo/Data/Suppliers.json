@@ -1,0 +1,24 @@
+{
+	"Suppliers": [
+        {
+			"Name": "Sapar Landscaping",
+            "Contact":{
+                "Name":"Bill Williams",
+                "Phone":"0437291575",
+                "Email":"testing@hotmail.com"             
+            },
+            "EffectiveFrom":"2020-01-02",
+            "EffectiveTo" : null
+		},
+		{
+			"Name": "Nerangba Timbers",
+            "Contact":{
+                "Name":"Bill Williams",
+                "Phone":"0437291575",
+                "Email":"testing@hotmail.com"      
+            },
+            "EffectiveFrom":"2020-01-02",
+            "EffectiveTo":null
+		}
+	]
+}
