@@ -2,19 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using ConstructixOnLineServices.Models;
+using ConstructixOnLineServices.Repository;
+using ConstructixOnLineServices.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ConstructixOnLineServices.Controllers
 {
-
-    public interface IRepository<T, K>
-    {
-        public T Get(K id);
-        public List<T> GetAll();
-    }
-
-   
     public class SupplierRepository : IRepository<Supplier, string>
     {
         private List<Supplier> _items;
@@ -34,37 +28,6 @@ namespace ConstructixOnLineServices.Controllers
         public List<Category> GetAll() => _items;
 
         public CategoryRepository(List<Category> items) => _items = items;
-    }
-
-    public interface ISupplierService
-    {
-        public List<Supplier> GetAll();
-        public Supplier Get(string id);
-
-
-    }
-
-    public class SupplierService : ISupplierService
-    {
-        private IRepository<Supplier, string> _supplierRepository;
-        private IRepository<Category, string> _categoryRepository;
-
-
-        public SupplierService(IRepository<Supplier, string> supplierRepository, IRepository<Category, string> categoryRepository)
-        {
-            _supplierRepository = supplierRepository;
-            _categoryRepository = categoryRepository;
-        }
-
-
-        public List<Supplier> GetAll() => _supplierRepository.GetAll();
-
-        public Supplier Get(string id) => _supplierRepository.Get(id);
-
-
-
-
-
     }
 
 
