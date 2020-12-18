@@ -38,8 +38,9 @@ namespace ConstructixOnLineServices
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ConstructixOnLineServices", Version = "v1" });
             });
 
-            var _suppliers = SetupSuppliers();
             var _categories = SetupCategories();
+            var _suppliers = SetupSuppliers(_categories);
+           
 
             services.AddScoped<IRepository<Supplier, string>>(c => new SupplierRepository(_suppliers));
             services.AddScoped<IRepository<Category, string>>(c => new CategoryRepository(_categories));
@@ -69,7 +70,7 @@ namespace ConstructixOnLineServices
             return _categories;
         }
 
-        private List<Supplier> SetupSuppliers()
+        private List<Supplier> SetupSuppliers(List<Category> categories)
         {
 
             object testObject = new object();
@@ -79,8 +80,7 @@ namespace ConstructixOnLineServices
              
                 if (!System.IO.File.Exists("suppliers.json"))
                 {
-                    _suppliers = IntialiseSuppliers();
-                    WriteSuppliers(_suppliers);
+                    _suppliers = IntialiseSuppliers(categories);
                 }
                 else
                 {
@@ -98,17 +98,24 @@ namespace ConstructixOnLineServices
             System.IO.File.WriteAllText("suppliers.json", Newtonsoft.Json.JsonConvert.SerializeObject(suppliers));
         }
 
-        private List<Supplier> IntialiseSuppliers()
+        private List<Supplier> IntialiseSuppliers(List<Category> categories)
         {
             var _suppliers = new List<Supplier>();
 
-            // creating of data should be in startup rather than in controllers.
-            // should be in the services side.
-
             _suppliers.Add(new Supplier
             {
-                Name = "Nerangba Timbers",
+                Id = Guid.NewGuid().ToString(),
+                Name = "Narangba Timbers",
                 EffectiveFrom = DateTime.Parse("01/01/2020"),
+                webAddress = "www.narangbaTimbers.com.au",
+
+                Locations = new List<Location>() { new Location
+                {
+                    Address = new Address { StreetLine1 = "728 Old Gympie Road", Suburb = "Narangba", Postcode = "4504", State = "QLD"},
+                    Phone = "07 3888 1293"
+                }},
+
+                    
                 Categories = new List<Category>
                 {
                     new Category
@@ -119,12 +126,28 @@ namespace ConstructixOnLineServices
                 }
             });
 
-            _suppliers.FirstOrDefault(x => x.Name.Equals("Nerangba Timbers")).Categories
-                .FirstOrDefault(x => x.Name.Equals("Construction")).SubCategories.Add(new Category
+            _suppliers.Add(new Supplier()
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = "A Wood Shed",
+                EffectiveFrom = DateTime.Parse("01/01/2020"),
+
+                Locations = new List<Location>() { new Location
                 {
-                    Id = Guid.NewGuid().ToString(), Name = "Building Supplies",
-                    EffectiveFrom = DateTime.Parse("01/01/2020")
-                });
+                    Address = new Address { StreetLine1 = "1/217 Pine Mountain Rd", Suburb = "Brassall", Postcode = "4305", State = "QLD"},
+                    Phone = "07 3813 0644"
+                },
+                    new Location
+                    {
+                        Address = new Address { StreetLine1 = "46 Queensland Road", Suburb = "Darra", Postcode = "4076", State = "QLD"},
+                        Phone = "07 3375 1726"
+                    }
+                },
+                Categories = new List<Category> 
+                { 
+                    categories.FirstOrDefault(x=>x.Name.Equals("Constructixion"))
+                }
+            });
 
             WriteSuppliers(_suppliers);
 

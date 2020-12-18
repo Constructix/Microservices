@@ -13,7 +13,30 @@ namespace ConstructixOnLineServices.Models
 
         public DateTime EffectiveFrom { get; set; }
         public DateTime? EffectiveTo { get; set; }
+        public List<Location> Locations { get; set; }
 
+        public Supplier()
+        {
+            Id = Guid.NewGuid().ToString();
+            Locations = new List<Location>();
+        }
+
+
+    }
+
+    public class Location
+    {
+        public Address Address { get; set; }
+        public string Phone { get; set; }
+    }
+
+    public class Address
+    {
+        public string StreetLine1 { get; set; }
+        public string StreetLine2 { get; set; }
+        public string Suburb { get; set; }
+        public string Postcode { get; set; }
+        public string State { get; set; }
 
     }
 }

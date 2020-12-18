@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using ConstructixOnLineServices.Controllers;
 using ConstructixOnLineServices.Models;
 using ConstructixOnLineServices.Repository;
@@ -20,11 +21,8 @@ namespace ConstructixOnLineServices.Services
 
         public List<Supplier> GetAll() => _supplierRepository.GetAll();
 
-        public Supplier Get(string id) => _supplierRepository.Get(id);
-
-
-
-
+        public Supplier GetSupplierByName(string id) => _supplierRepository.Get(id);
+        public Supplier GetSupplierById(Guid id) => _supplierRepository.GetById(id);
 
     }
 }

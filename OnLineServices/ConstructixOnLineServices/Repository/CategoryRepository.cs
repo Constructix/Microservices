@@ -8,6 +8,7 @@ namespace ConstructixOnLineServices.Repository
     {
         private List<Category> _items;
         public Category Get(string id) => _items.Find(x => x.Name.Equals(id, StringComparison.CurrentCultureIgnoreCase));
+        public Category GetById(Guid id) => _items.Find(x => x.Id.Equals(id));
 
         public List<Category> GetAll() => _items;
 
